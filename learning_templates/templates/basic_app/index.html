@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- <html>
+<head>
+	<title></title>
+</head>
+<body>
+	<H1> WELCOME TO INDEX</H1>
+</body>
+</html> -->
+
+{% extends "basic_app/base.html" %}
+
+{% block body_block %}
+	<H1> WELCOME TO INDEX</H1>
+	<h2> This is index.html page showing</h2>
+
+	<!-- <h1> {{ text | upper }} </h1> -->
+	<h1> {{ text | cut:'hello' }} </h1>   
+				<!-- this is a custom filter -->
+				<!-- THERE SHOULD NOT BE ANY SPACE BETWEEN FUNCTION:'PARAMETER' -->
+	{{ number|add:"99" }}
+{% endblock %}	

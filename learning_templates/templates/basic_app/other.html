@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<H1> WELCOME TO OTHER</H1>
+</body>
+</html> -->
+
+
+<!-- AFTER EXTENDING AND USING TEMPLATE INHERITANCE -->
+
+<!DOCTYPE html>    
+	<!-- this is mandatory to include in each html file -->
+
+{% extends "basic_app/base.html" %}
+	<!-- give the path of the base (inheriting) file -->
+
+	{% block body_block %}
+		<!-- anything that we want to include other than the inherited data -->
+		<H1> WELCOME TO OTHER</H1>
+		<h2> This is an example of template inheritance </h2>
+
+	{% endblock %}
